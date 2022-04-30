@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+:root {
+  --white: hsl(0, 0%, 100%);
+  --light-grey: hsl(217, 12%, 63%);
+  --dark-blue: #1f2630;
+  --very-dark-blue: #171e28;
+  --medium-grey: hsl(216, 12%, 54%);
+  --orange: #fc7613;
+  /* --container-bg: #1f2630; */
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 15px;
+  font-family: "Overpass", sans-serif;
+}
+
+body {
+  background-color: #141519;
+  min-height: 100vh;
+}
+
+main {
+  /* background-color: aquamarine; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+main .main-card {
+  background-color: var(--very-dark-blue);
+  width: 324px;
+  height: 360px;
+  padding: 1.4rem;
+  margin: 0 auto;
+  border-radius: 20px;
+}
+
+main .state-start {
+  display: flex;
+  flex-direction: column;
+  color: var(--medium-grey);
+}
+
+main .state-start .image-circle {
+  background-color: var(--dark-blue);
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+main .state-start .content {
+  margin-top: 1.4rem;
+}
+
+.content h1 {
+  font-size: 24px;
+  color: white;
+}
+
+.content p {
+  margin-top: 0.6rem;
+}
+
+.state-start .rating-numbers {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.radio-input {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--dark-blue);
+  border-radius: 50%;
+}
+
+.radio-input:hover {
+  background: var(--orange);
+  color: white;
+  cursor: pointer;
+}
+
+main .btn {
+  margin-top: 1.8rem;
+  height: 45px;
+  border-radius: 20px;
+  border: transparent;
+  background-color: var(--orange);
+  color: white;
+  font-weight: 700;
+  white-space: 10px;
+}
+
+main .btn span {
+  letter-spacing: 2px;
+}
+
+main .btn:hover {
+  background-color: white;
+  color: var(--orange);
+  cursor: pointer;
+}
+
+/* STATE END STYLE */
+main .state-end {
+  color: var(--medium-grey);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main .state-end image-illustration {
+  padding: 4px;
+}
+
+.state-end .content {
+}

@@ -26,7 +26,7 @@
     <main>
       <!-- Rating state start -->
       <section class="main-card">
-        <section class="state-start" style="display: none">
+        <section class="state-start show">
           <header>
             <div class="image-circle">
               <img src="./images/icon-star.svg" alt="icon-star" />
@@ -43,27 +43,6 @@
             <div class="radio-input">3</div>
             <div class="radio-input">4</div>
             <div class="radio-input">5</div>
-
-            <!-- <li class="radio-input">
-              <label for="1">1</label>
-              <input type="radio" id="1" name="number-rating" value="one" />
-            </li>
-            <li class="radio-input">
-              <input type="radio" id="2" name="number-rating" value="two" />
-              <label for="2">2</label><br />
-            </li>
-            <li class="radio-input">
-              <input type="radio" id="3" name="number-rating" value="three" />
-              <label for="3">3</label><br />
-            </li>
-            <li class="radio-input">
-              <input type="radio" id="4" name="number-rating" value="four" />
-              <label for="4">4</label><br />
-            </li>
-            <li class="radio-input">
-              <input type="radio" id="5" name="number-rating" value="five" />
-              <label for="5">5</label><br />
-            </li> -->
           </section>
           <button class="btn">
             <span>SUBMIT</span>
@@ -77,21 +56,17 @@
           </div>
 
           <section class="content">
-            <div class="result">
-              <p>You selected 4 out 5</p>
-            </div>
-            <h1>Thank you!</h1>
-            <p>We appreciate you taking the time to give a rating. If you ever need more support, don’t hesitate to get in touch!</p>
-          </section>
-          <!-- You selected -->
-          <!-- Add rating here -->
-          <!-- out of 5  We appreciate you taking the time to give a rating. If you ever need more support, don’t hesitate to get in touch! -->
+            <p class="result">You selected <span> 4 </span> out 5</p>
 
-          <!-- Thank you state end -->
+            <h1>Thank you!</h1>
+            <p class="appreciate">We appreciate you taking the time to give a rating. If you ever need more support, don’t hesitate to get in touch!</p>
+          </section>
         </section>
       </section>
     </main>
 
     <div class="attribution">Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="#">Your Name Here</a>.</div>
+
+    <script src="./script.js"></script>
   </body>
 </html>

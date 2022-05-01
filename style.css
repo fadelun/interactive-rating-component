@@ -32,6 +32,15 @@ main {
   min-height: 100vh;
 }
 
+main .actived {
+  color: white;
+  background-color: var(--light-grey);
+}
+
+main .main-card > .show {
+  display: flex !important;
+}
+
 main .main-card {
   background-color: var(--very-dark-blue);
   width: 324px;
@@ -42,7 +51,7 @@ main .main-card {
 }
 
 main .state-start {
-  display: flex;
+  display: none;
   flex-direction: column;
   color: var(--medium-grey);
 }
@@ -61,12 +70,12 @@ main .state-start .content {
   margin-top: 1.4rem;
 }
 
-.content h1 {
+.state-start .content h1 {
   font-size: 24px;
   color: white;
 }
 
-.content p {
+.state-start .content p {
   margin-top: 0.6rem;
 }
 
@@ -117,7 +126,7 @@ main .btn:hover {
 /* STATE END STYLE */
 main .state-end {
   color: var(--medium-grey);
-  display: flex;
+  display: none;
   flex-direction: column;
   align-items: center;
 }
@@ -127,4 +136,47 @@ main .state-end image-illustration {
 }
 
 .state-end .content {
+  text-align: center;
+}
+
+.state-end .content .result {
+  background: var(--dark-blue);
+  color: var(--orange);
+  width: fit-content;
+  padding: 6px 10px;
+  border-radius: 20px;
+  line-height: 20px;
+  margin: 1rem auto 0;
+}
+
+.state-end .content h1 {
+  font-size: 24px;
+  margin: 2rem 0 1rem;
+  color: white;
+}
+
+.state-end .content .appreciate {
+  line-height: 20px;
+}
+
+@media (min-width: 768px) {
+  main .main-card {
+    width: 412px;
+    height: 412px;
+    padding: 4rem 2.2rem;
+  }
+
+  main .main-card .image-circle {
+    width: 50px;
+    height: 50px;
+  }
+
+  main .state-start .content {
+    margin-top: 2rem;
+  }
+
+  .main-card .radio-input {
+    width: 50px;
+    height: 50px;
+  }
 }

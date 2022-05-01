@@ -16,6 +16,7 @@
 
 html {
   font-size: 15px;
+  font-weight: 400;
   font-family: "Overpass", sans-serif;
 }
 
@@ -72,6 +73,7 @@ main .state-start .content {
 
 .state-start .content h1 {
   font-size: 24px;
+  font-weight: 700;
   color: white;
 }
 
@@ -123,6 +125,28 @@ main .btn:hover {
   cursor: pointer;
 }
 
+footer {
+  background-color: var(--orange);
+  color: white;
+  padding: 4px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  opacity: 0;
+}
+
+footer:hover {
+  opacity: 1;
+}
+
+footer a {
+  font-weight: 700;
+  color: whitesmoke;
+  text-decoration: none;
+}
+
 /* STATE END STYLE */
 main .state-end {
   color: var(--medium-grey);
@@ -151,6 +175,7 @@ main .state-end image-illustration {
 
 .state-end .content h1 {
   font-size: 24px;
+  font-weight: 700;
   margin: 2rem 0 1rem;
   color: white;
 }
